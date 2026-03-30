@@ -23,10 +23,10 @@
    
     - coba aoakah default setting yang berlaku (sudo mysql -u root -p)
     - cek apakah masih ada database dummy (show databases;)
-    - 
+      
     ![alt text](image-3.png)
 
-6. Kita lakukan Hardening Security
+5. Kita lakukan Hardening Security
     - Masukan command sudo mysql_secure_installation
     - Switch to unix_socket authentication : Y
     - Change the root password? : Y
@@ -34,20 +34,26 @@
     - Disallow root login remotely? : Y
     - Remove test database and access to it? : Y
     - Reload privilege tables now? : Y
+      
     ![alt text](image-4.png)
+   
     - Cek kembali apakah masih bisa login tanpa password
+      
     ![alt text](image-5.png)
+   
     dan ternyata tidak bisa (berhasil)
 
-7. Membuat database dan user
+6. Membuat database dan user
     - Membuat database untuk web company profile (create database dbCompro;)
     - Membuat user untuk web company profile (create user 'userCompro'@'localhost' identified by '*********';)
     - Memberikan Hak akses user untuk web company profile (grant all privileges on dbCompro.* to 'userCompro'@'localhost';)
     - flush privileges
+      
     ![alt text](image-6.png)
 
-8. Login menggunakan akun database yang sudah di buat
+7. Login menggunakan akun database yang sudah di buat
     - login menggunakan username (sudo mysql -u userCompro -p)
     - enter password yang sudah di buat (uciCompro)
     - lihat database yang sudah dibuat (show databases;)
+      
     ![alt text](image-7.png)
