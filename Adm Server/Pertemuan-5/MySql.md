@@ -12,15 +12,21 @@
     ![alt text](image.png)
 
 4. Install MariaDB
-    - sudo apt-get install mariadb-server![alt text](image-1.png)
+    - sudo apt-get install mariadb-server
+      
+      ![alt text](image-1.png)
+      
     - sudo system start mariadb
     - sudo system status mariadb
+      
     ![alt text](image-2.png)
+   
     - coba aoakah default setting yang berlaku (sudo mysql -u root -p)
     - cek apakah masih ada database dummy (show databases;)
+    - 
     ![alt text](image-3.png)
 
-5. Kita lakukan Hardening Security
+6. Kita lakukan Hardening Security
     - Masukan command sudo mysql_secure_installation
     - Switch to unix_socket authentication : Y
     - Change the root password? : Y
@@ -33,14 +39,14 @@
     ![alt text](image-5.png)
     dan ternyata tidak bisa (berhasil)
 
-6. Membuat database dan user
+7. Membuat database dan user
     - Membuat database untuk web company profile (create database dbCompro;)
     - Membuat user untuk web company profile (create user 'userCompro'@'localhost' identified by '*********';)
     - Memberikan Hak akses user untuk web company profile (grant all privileges on dbCompro.* to 'userCompro'@'localhost';)
     - flush privileges
     ![alt text](image-6.png)
 
-7. Login menggunakan akun database yang sudah di buat
+8. Login menggunakan akun database yang sudah di buat
     - login menggunakan username (sudo mysql -u userCompro -p)
     - enter password yang sudah di buat (uciCompro)
     - lihat database yang sudah dibuat (show databases;)
