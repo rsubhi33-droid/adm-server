@@ -12,8 +12,7 @@
     ![alt text](image.png)
 
 4. Install MariaDB
-    - sudo apt-get install mariadb-server
-    ![alt text](image-1.png)
+    - sudo apt-get install mariadb-server![alt text](image-1.png)
     - sudo system start mariadb
     - sudo system status mariadb
     ![alt text](image-2.png)
