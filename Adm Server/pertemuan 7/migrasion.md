@@ -13,7 +13,8 @@
      ![alt text](image-2.png)
    - ekstrak file hasil archive
      1. Install tools Unzip di EC2
-        - sudo apt install unzip -y ![alt text](image-3.png)
+        - sudo apt install unzip -y
+        - ![alt text](image-3.png)
      2. cd /var/www/html
      3. command ls untuk cek
      4. Ekstrak file hasil archive
@@ -38,8 +39,10 @@
 6. di Terminal SSH cd ke folder standalone run apps
    - exit database
    - cd standalone
-   - pm2 start server.js ![alt text](image-7.png)
-   - pm2  ![alt text](image-9.png)
+   - pm2 start server.js
+   - ![alt text](image-7.png)
+   - pm2 status
+   - ![alt text](image-9.png)
 
 7. Buka port di security group EC2
    - Klik nama security di instance scroll sampe ada link
