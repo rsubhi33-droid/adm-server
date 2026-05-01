@@ -2,7 +2,8 @@
 
 1. install based docker dokumen https://docs.docker.com/engine/install/ubuntu/
    - uninstall old version docker
-![alt text](image.png)
+   ![alt text](image.png)
+
    - install Docker
      a. sudo apt-get update && sudo apt-get upgrade
      b. sudo apt install ca-certificates curl
